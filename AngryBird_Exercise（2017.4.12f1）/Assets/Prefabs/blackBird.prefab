@@ -23,9 +23,9 @@ GameObject:
   - component: {fileID: 50431000417764856}
   - component: {fileID: 231401624659037844}
   - component: {fileID: 58388813958446204}
-  - component: {fileID: 114947118886792144}
   - component: {fileID: 58504656809445990}
-  - component: {fileID: 114381634294928392}
+  - component: {fileID: 114901248514815930}
+  - component: {fileID: 114403284790048282}
   m_Layer: 0
   m_Name: blackBird
   m_TagString: Player
@@ -57,8 +57,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1118560274395100}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.4, y: -1.85, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.01, y: -1.7120811, z: 0.0402711}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4826446231267962}
@@ -188,7 +188,7 @@ MonoBehaviour:
   desiredTime: 2
   startColor: {r: 1, g: 1, b: 1, a: 1}
   endColor: {r: 1, g: 1, b: 1, a: 0}
---- !u!114 &114381634294928392
+--- !u!114 &114403284790048282
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -196,22 +196,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1118560274395100}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 975184b8f7caadf489c6329af0a92d42, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c403390145275c4e8f2f439c5f5035b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxDis: 1.5
-  sp: {fileID: 0}
-  right: {fileID: 0}
   rightPos: {fileID: 0}
-  left: {fileID: 0}
   leftPos: {fileID: 0}
+  sp: {fileID: 0}
   boom: {fileID: 1534803252185148, guid: b29f0bd42cfbfb94c9b5b8915937650d, type: 2}
-  smooth: 3
+  right: {fileID: 0}
+  left: {fileID: 0}
+  fly: {fileID: 8300000, guid: 65774e057815a5e4fa70215e9acad616, type: 3}
   select: {fileID: 8300000, guid: 3641c9435ad52ea429348437c2742cdb, type: 3}
-  fly: {fileID: 8300000, guid: 32b5cb2ec3029484eb0a71e43bd697e0, type: 3}
-  hurt: {fileID: 21300222, guid: 7f54faac0aa0f654bbbc596164481c55, type: 3}
-  blocks: []
---- !u!114 &114947118886792144
+  hurt: {fileID: 21300238, guid: 7f54faac0aa0f654bbbc596164481c55, type: 3}
+--- !u!114 &114901248514815930
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -219,7 +217,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1118560274395100}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b9935f858ffbef469931ef802b9fd70, type: 3}
+  m_Script: {fileID: 11500000, guid: 44089519cd5a50f48909f88167d407be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   myTrail: {fileID: 114247471902192298}
@@ -281,7 +279,7 @@ SpringJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.101439714, y: 0.75781304}
+  m_ConnectedAnchor: {x: -3.4019473, y: -1.5678431}
   m_AutoConfigureDistance: 0
   m_Distance: 0.3
   m_DampingRatio: 0

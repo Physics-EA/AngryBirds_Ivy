@@ -232,16 +232,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\GameManager.cs" />
-    <Compile Include="Assets\PausePanel.cs" />
+    <Compile Include="Assets\LevelSelect.cs" />
+    <Compile Include="Assets\LoadLevel.cs" />
+    <Compile Include="Assets\LoadLevelAsyc.cs" />
+    <Compile Include="Assets\LoadLevelAsync.cs" />
     <Compile Include="Assets\PocketRPG Trails\Scripts\Effects\WeaponTrail.cs" />
     <Compile Include="Assets\PocketRPG Trails\Scripts\Entities\BladeMaster.cs" />
     <Compile Include="Assets\PocketRPG Trails\Scripts\Utility\AnimationController.cs" />
     <Compile Include="Assets\Scripts\Bird.cs" />
+    <Compile Include="Assets\Scripts\BlackBird.cs" />
     <Compile Include="Assets\Scripts\Boom.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\GreenBird.cs" />
+    <Compile Include="Assets\Scripts\MapSelect.cs" />
+    <Compile Include="Assets\Scripts\PausePanel.cs" />
     <Compile Include="Assets\Scripts\Pig.cs" />
-    <Compile Include="Assets\TestMyTrail.cs" />
-    <Compile Include="Assets\Win.cs" />
+    <Compile Include="Assets\Scripts\TestMyTrail.cs" />
+    <Compile Include="Assets\Scripts\Win.cs" />
+    <Compile Include="Assets\Scripts\YellowBird.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

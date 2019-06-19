@@ -23,8 +23,8 @@ GameObject:
   - component: {fileID: 50351423699809700}
   - component: {fileID: 231699900015514476}
   - component: {fileID: 58758823334949108}
-  - component: {fileID: 114861010286327056}
-  - component: {fileID: 114878251315787496}
+  - component: {fileID: 114199104605863040}
+  - component: {fileID: 114091752626412834}
   m_Layer: 0
   m_Name: yellowBird
   m_TagString: Player
@@ -69,8 +69,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1028169593464048}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.724, y: -2.993, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.051, y: -1.853, z: 0.0402711}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4099399177633594}
@@ -153,7 +153,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.24
---- !u!114 &114861010286327056
+--- !u!114 &114091752626412834
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -161,11 +161,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1028169593464048}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b9935f858ffbef469931ef802b9fd70, type: 3}
+  m_Script: {fileID: 11500000, guid: 44089519cd5a50f48909f88167d407be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   myTrail: {fileID: 114966130410056216}
---- !u!114 &114878251315787496
+--- !u!114 &114199104605863040
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -173,20 +173,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1028169593464048}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be6e0888380a617458db1bb923e7aea5, type: 3}
+  m_Script: {fileID: 11500000, guid: 64c380f050c0b5f49b2d1f6efee06627, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxDis: 1.5
-  sp: {fileID: 0}
-  right: {fileID: 0}
   rightPos: {fileID: 0}
-  left: {fileID: 0}
   leftPos: {fileID: 0}
+  sp: {fileID: 0}
   boom: {fileID: 1534803252185148, guid: b29f0bd42cfbfb94c9b5b8915937650d, type: 2}
-  smooth: 3
-  select: {fileID: 8300000, guid: 3641c9435ad52ea429348437c2742cdb, type: 3}
+  right: {fileID: 0}
+  left: {fileID: 0}
   fly: {fileID: 8300000, guid: 65774e057815a5e4fa70215e9acad616, type: 3}
-  hurt: {fileID: 21300316, guid: 7f54faac0aa0f654bbbc596164481c55, type: 3}
+  select: {fileID: 8300000, guid: 3641c9435ad52ea429348437c2742cdb, type: 3}
 --- !u!114 &114966130410056216
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -264,7 +262,7 @@ SpringJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.101439714, y: 0.75781304}
+  m_ConnectedAnchor: {x: -3.383077, y: -1.561078}
   m_AutoConfigureDistance: 0
   m_Distance: 0.3
   m_DampingRatio: 0

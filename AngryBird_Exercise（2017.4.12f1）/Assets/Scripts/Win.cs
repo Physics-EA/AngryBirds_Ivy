@@ -5,7 +5,7 @@ using UnityEngine;
 public class Win : MonoBehaviour
 {
 
-   public  void Show()
+    public void Show()
     {
         GameManager._instance.ShowStars();
     }

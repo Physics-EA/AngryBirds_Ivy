@@ -16,6 +16,10 @@ public class GameManager : MonoBehaviour
 
     public GameObject[] stars;
 
+    private int starsNum = 0;
+
+    private int totalNum = 10;
+
     private void Awake()
     {
         _instance = this;
@@ -32,7 +36,7 @@ public class GameManager : MonoBehaviour
         Initialized();
     }
 
-  
+
 
     void Initialized()
     {
@@ -43,11 +47,13 @@ public class GameManager : MonoBehaviour
                 birds[i].transform.position = originPos;
                 birds[i].enabled = true;
                 birds[i].sp.enabled = true;
+                birds[i].canMove = true;
             }
             else
             {
                 birds[i].enabled = false;
                 birds[i].sp.enabled = false;
+                birds[i].canMove = false;
             }
         }
     }
@@ -79,21 +85,42 @@ public class GameManager : MonoBehaviour
 
     IEnumerator show()
     {
-        for (int i = 0; i < birds.Count + 1; i++)
+        for (; starsNum < birds.Count + 1; starsNum++)
         {
+            if (starsNum >= stars.Length)
+            {
+                break;
+            }
             yield return new WaitForSeconds(0.2f);
-            stars[i].SetActive(true);
+            stars[starsNum].SetActive(true);
         }
     }
 
 
     public void Retry()
     {
+        SaveData();
         SceneManager.LoadScene(0);
     }
 
     public void Home()
     {
+        SaveData();
         SceneManager.LoadScene(1);
+    }
+
+    public void SaveData()
+    {
+        if (starsNum > PlayerPrefs.GetInt(PlayerPrefs.GetString("nowLevel")))
+        {
+            PlayerPrefs.SetInt(PlayerPrefs.GetString("nowLevel"), starsNum);
+        }
+        int sum = 0;
+        for (int i = 1; i < totalNum; i++)
+        {
+            sum += PlayerPrefs.GetInt("level" + i.ToString());
+        }
+
+        PlayerPrefs.SetInt("totalNum", sum);
     }
 }
